@@ -47,23 +47,6 @@ test_results <- data_long %>%
     TRUE ~ "ns"
   ))
 
-# Perform paired t-tests for each option
-t_test_results <- data_long %>%
-  group_by(Option) %>%
-  summarise(
-    t_value = t.test(Percentage[Condition == "IDA"], Percentage[Condition == "EDA"], paired = TRUE)$statistic,
-    df = t.test(Percentage[Condition == "IDA"], Percentage[Condition == "EDA"], paired = TRUE)$parameter,
-    p_value = t.test(Percentage[Condition == "IDA"], Percentage[Condition == "EDA"], paired = TRUE)$p.value,
-  ) %>%
-  mutate(
-    Significance = case_when(
-      p_value < 0.001 ~ "***",
-      p_value < 0.01  ~ "**",
-      p_value < 0.05  ~ "*",
-      TRUE            ~ "ns"
-    )
-  )
-
 # Print the test results
 print(test_results)
 
