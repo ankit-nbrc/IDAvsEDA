@@ -4,7 +4,7 @@ library(ggplot2)
 library(dplyr)
 
 #set working directory and read table 
-setwd("D:/ankit backup/EEG pilot1/etc/erp_data/second attempt/till 19 sub/analysis trial wise/analysis for LMM")
+setwd("path to directory")
 data <- read.csv("data_table_alphaF1POz.csv")
 
 data$ConditionID <- as.factor(data$ConditionID)
