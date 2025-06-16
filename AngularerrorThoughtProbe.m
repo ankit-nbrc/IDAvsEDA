@@ -214,12 +214,12 @@ sub = [];
 for i = sub
     %load behavioral file
     subjectfolder = sprintf('sub%d',i);
-    folderpath = fullfile('D:\ankit backup\EEG pilot1\etc\erp_data\second attempt\till 19 sub\analysis trial wise\analysis for LMM', subjectfolder);
+    folderpath = fullfile('folderpath', subjectfolder);
     cd(folderpath);
 
     %load behavioral file
     subjectfolder = sprintf('sub%d',i);
-    folderpath = fullfile('D:\ankit backup\EEG pilot1\etc\erp_data\second attempt\till 19 sub\analysis trial wise\analysis for LMM', subjectfolder);
+    folderpath = fullfile('folderpath', subjectfolder);
     cd(folderpath);
 
     % Load the first .mat file and rename the variable
