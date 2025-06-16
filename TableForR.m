@@ -6,7 +6,7 @@
 %%
 % Define the base folder path
 clearvars;
-base_folder = 'D:\ankit backup\EEG pilot1\etc\erp_data\second attempt\till 19 sub\analysis trial wise\analysis for LMM'; % Replace with the actual path
+base_folder = 'folderpath'; % Replace with the actual path
 
 % Loop through each subject (excluding 21 and 27)
 excluded_subjects = [21, 27];
