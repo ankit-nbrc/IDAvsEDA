@@ -6,7 +6,7 @@ library(ggpubr)
 library(effsize)
 
 #set working directory and read data tables
-setwd("D:/ankit backup/EEG pilot1/etc/erp_data/second attempt/till 19 sub/analysis trial wise/analysis for LMM")
+setwd("path to directory")
 data_tp_ida <- read.csv("tp_ida_allsub.csv")
 data_tp_eda <- read.csv("tp_eda_allsub.csv")
 
